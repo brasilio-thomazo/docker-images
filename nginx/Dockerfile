@@ -7,3 +7,4 @@ RUN apk add --no-cache nginx \
 USER app
 EXPOSE 80
 ENTRYPOINT [ "entrypoint.sh" ]
+CMD [ "nginx", "-g", "daemon off;" ]
